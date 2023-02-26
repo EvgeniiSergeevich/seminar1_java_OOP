@@ -8,15 +8,16 @@ public abstract class Human {
     protected int armor;
     protected int range;
 
-    public void attack()
+    public int attack()
     {
-
+        hp = hp + armor - dmg;
+        return hp;
     }
 
-    public void damage()
-    {
-
-    }
+//    public void damage()
+//    {
+//
+//    }
 
     public Human (String name, String type, int hp, int dmg, int armor, int range){
         this.name = name;
