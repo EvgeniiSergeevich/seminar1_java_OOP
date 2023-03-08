@@ -7,4 +7,13 @@ public class Peasant extends Human {              //Крестьянин
         this.name = name;
     }
 
+    @Override
+    public void step() {
+
+    }
+
+    @Override
+    public String getInfo() {
+        return "Я крестьянин";
+    }
 }

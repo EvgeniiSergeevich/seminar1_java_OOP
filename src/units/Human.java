@@ -1,6 +1,6 @@
 package units;
 
-public abstract class Human {
+public abstract class Human implements GameInterface {
 
     protected int hp, maxHp, dmg, armor, range;
 
