@@ -12,6 +12,6 @@ public class Spearman extends Warrior {
 
     @Override
     public String getInfo() {
-        return "Я копейщик";
+        return "Я копейщик " + name;
     }
 }

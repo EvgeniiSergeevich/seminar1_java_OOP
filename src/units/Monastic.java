@@ -12,6 +12,6 @@ public class Monastic extends Mag {
 
     @Override
     public String getInfo() {
-        return "Я монах";
+        return "Я монах " + name;
     }
 }

@@ -14,6 +14,6 @@ public class Peasant extends Human {              //Крестьянин
 
     @Override
     public String getInfo() {
-        return "Я крестьянин";
+        return "Я крестьянин " + name;
     }
 }
