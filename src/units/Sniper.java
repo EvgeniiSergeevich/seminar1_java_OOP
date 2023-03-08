@@ -1,7 +1,7 @@
 package units;
 
 public class Sniper extends Archer {
-    public Sniper(String name, String type, int hp, int dmg, int armor, int range) {
-        super(name, type, hp, dmg, armor, range);
+    public Sniper (String name) {
+        super(120, 120, 35, 5, 40, 11, 11, name);
     }
 }

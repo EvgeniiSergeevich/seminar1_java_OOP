@@ -1,8 +1,10 @@
 package units;
 
 public class Peasant extends Human {              //Крестьянин
-    public Peasant(String name, String type) {
-        super(name, type, 100, 10, 0, 5);
+    String name;
+    public Peasant(String name) {
+        super(100, 100, 10, 0, 3);
+        this.name = name;
     }
 
 }

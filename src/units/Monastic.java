@@ -1,7 +1,7 @@
 package units;
 
 public class Monastic extends Mag {
-    public Monastic(String name, String type, int hp, int dmg, int armor, int range) {
-        super(name, type, hp, dmg, armor, range);
+    public Monastic(String name) {
+        super(100,100, 40, 5, 20, 100, 100, name);
     }
 }
