@@ -2,7 +2,7 @@ package units;
 
 public class Spearman extends Warrior {
     public Spearman(String name) {
-        super(130, 130, 50, 35, 5, name);
+        super(10, 10, 1, 3, 4, 5, 4, name);
     }
 
     @Override

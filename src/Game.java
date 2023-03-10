@@ -6,7 +6,6 @@ import java.util.Random;
 public class Game {
     public static void main(String[] args) {
         ArrayList<Human> list1 = new ArrayList<>();
-//        int type = new Random().nextInt(6);
 
         for (int i = 0; i < 9; i++) {
             switch (new Random().nextInt(6)) {
@@ -33,12 +32,6 @@ public class Game {
                     break;
             }
         }
-
-
-
-
-
-
         list1.forEach(n -> System.out.println(n.getInfo()));
     }
 

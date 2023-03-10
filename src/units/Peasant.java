@@ -2,9 +2,11 @@ package units;
 
 public class Peasant extends Human {              //Крестьянин
     String name;
+    int delivery;
     public Peasant(String name) {
-        super(100, 100, 10, 0, 3);
+        super(1, 1, 1,1,1,1, 3);
         this.name = name;
+        this.delivery = 1;
     }
 
     @Override
