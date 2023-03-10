@@ -12,6 +12,6 @@ public class Crossbowman extends Archer {
 
     @Override
     public String getInfo() {
-        return "Я арбалетчик " + name;
+        return "Я арбалетчик " + name + " " + speed;
     }
 }

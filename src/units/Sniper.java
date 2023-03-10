@@ -6,7 +6,7 @@ public class Sniper extends Archer {
 
 //    int d = getDmg();
     public Sniper (String name) {
-        super(15, 15,8, 10, 12, 9, 32, 32, 32, name);
+        super(15, 15,8, 10, 12, 9, 9, 32, 32, name);
     }
 
     @Override
@@ -16,6 +16,6 @@ public class Sniper extends Archer {
 
     @Override
     public String getInfo() {
-        return "Я снайпер " + name;
+        return "Я снайпер " + name + " " + speed;
     }
 }

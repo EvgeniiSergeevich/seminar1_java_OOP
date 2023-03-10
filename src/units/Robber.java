@@ -12,6 +12,6 @@ public class Robber extends Warrior {
 
     @Override
     public String getInfo() {
-        return "Я разбойник " + name;
+        return "Я разбойник " + name + " " + speed;
     }
 }
