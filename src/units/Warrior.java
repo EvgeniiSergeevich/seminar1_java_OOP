@@ -20,14 +20,29 @@ public abstract class Warrior extends Human {
         }
         else
         {
-            if (coord.chooseWay(victim.coord).y > 0)
+            Coords tempVC = coord.chooseWay(victim.coord);
+            if (Math.abs(tempVC.x) < Math.abs(tempVC.y))
             {
-                coord.y--;
+                if (coord.chooseWay(victim.coord).y > 0)
+                {
+                    coord.y--;
+                }
+                else
+                {
+                    coord.y++;
+                }
             }
-            else
-            {
-                coord.y++;
+            else {
+                if (coord.chooseWay(victim.coord).x > 0)
+                {
+                    coord.x--;
+                }
+                else
+                {
+                    coord.x++;
+                }
             }
+
         }
 
 
