@@ -1,4 +1,4 @@
-package units.coords;
+package units;
 import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
@@ -30,5 +30,30 @@ public class Coords {
     {
         return  sqrt(pow((x - pointA.x), 2) + pow((y - pointA.y), 2));
     }
+
+//    protected boolean isLeft(Coords oponent){
+//        return x < oponent.x;
+//    }
+//
+//    protected  boolean isRight(Coords opponent)
+//    {
+//        return x > opponent.x;
+//    }
+//
+//    protected boolean isUp(Coords opponent)
+//    {
+//        return y > opponent.y;
+//    }
+//
+//    protected boolean isDown(Coords opponent)
+//    {
+//        return y < opponent.y;
+//    }
+
+    protected Coords chooseWay(Coords opponent)
+    {
+        return new Coords(x - opponent.x,y - opponent.y);
+    }
+
 
 }

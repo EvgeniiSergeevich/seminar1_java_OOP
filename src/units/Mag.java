@@ -34,7 +34,7 @@ public abstract class Mag extends Human {
         double minHp = Double.MAX_VALUE;
         for (int i = 0; i < team.size(); i++)
         {
-            if (minHp > team.get(i).maxHp - team.get(i).getHp())
+            if (minHp > team.get(i).maxHp - team.get(i).getHp() && !team.get(i).state.equals("Die"))
             {
                 index = i;
                 minHp = team.get(i).maxHp - team.get(i).getHp();

@@ -1,12 +1,10 @@
 package units;
 
 
-import units.coords.Coords;
-
 import java.util.ArrayList;
 
 public abstract class Archer extends Human implements GameInterface {
-    protected int shots, maxShots;
+    protected int range, shots;
     protected String name;
 
     public int getShots() {
@@ -17,15 +15,24 @@ public abstract class Archer extends Human implements GameInterface {
         return name;
     }
 
-    public int getMaxShots() {
-        return maxShots;
-    }
 
-    public Archer(int x, int y, int hp, int maxHp, int minDmg, int maxDmg, int attack, int armor, int speed, int maxShots, int shots, String name, int side) {
+
+    public Archer(int x, int y, int hp, int maxHp, int minDmg, int maxDmg, int attack, int armor, int speed, int range, int shots, String name, int side) {
         super(name, x, y, hp, maxHp, minDmg, maxDmg, attack, armor, speed, side);
-        this.maxShots = maxShots;
         this.shots = shots;
         this.name = name;
+        this.range = range;
+    }
+
+    @Override
+    public String toString() {
+        return name +
+                " H:" + Math.round(hp) +
+                " D:" + armor +
+                " A:" + attack +
+                " Dmg:" + Math.round(Math.abs((minDmg+maxDmg)/2)) +
+                " Shots:" + shots + " " +
+                state;
     }
 
     public void step(ArrayList<Human> team1, ArrayList<Human> team2)

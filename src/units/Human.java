@@ -1,7 +1,5 @@
 package units;
 
-import units.coords.Coords;
-
 import java.util.ArrayList;
 
 public abstract class Human implements GameInterface {
@@ -11,8 +9,7 @@ public abstract class Human implements GameInterface {
     protected Coords coord;
     protected String state, name;
 
-
-
+    public int[] getCoords() { return new int[]{coord.getX(), coord.getY()}; }
     public float getHp() {
         return hp;
     }
@@ -53,6 +50,15 @@ public abstract class Human implements GameInterface {
         }
         if(hp > maxHp) hp = maxHp;
     }
+    @Override
+    public String toString() {
+        return name +
+                " H:" + Math.round(hp) +
+                " D:" + armor +
+                " A:" + attack +
+                " Dmg:" + Math.round(Math.abs((minDmg+maxDmg)/2)) +
+                " " + state;
+    }
 
     public Human (String name, int x, int y, float hp, int maxHp, int minDmg, int maxDmg, int attack, int armor, int speed, int side){
         coord = new Coords(x, y);
@@ -73,7 +79,7 @@ public abstract class Human implements GameInterface {
         int index = 0;
         double min = 100;
         for (int i = 0; i < team.size(); i++) {
-            if(min > coord.distance(team.get(i).coord))
+            if(min > coord.distance(team.get(i).coord) && !team.get(i).state.equals("Die"))
             {
                 index = i;
                 min = coord.distance(team.get(i).coord);

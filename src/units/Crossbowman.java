@@ -1,11 +1,9 @@
 package units;
 
-import units.coords.Coords;
-
 public class Crossbowman extends Archer {
     protected int x, y;
     public Crossbowman(String name, int x, int y, int side) {
-        super(x,y, 10, 10,2, 3, 6, 3, 4, 16, 16, name, side);
+        super(x,y, 10, 10,2, 3, 6, 3, 4, 10, 16, name, side);
         this.x = x;
         this.y = y;
     }

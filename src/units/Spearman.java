@@ -30,8 +30,5 @@ public class Spearman extends Warrior {
                 .append("\t| HP:\t").append(Spearman.super.hp)
                 .append(" \t|\t\t\t|").append("\t| (X.Y) : ").append(Spearman.super.coord.getX()).append(".").append(Spearman.super.coord.getY());
     }
-    @Override
-    public void step(ArrayList<Human> red, ArrayList<Human> blue) {
 
-    }
 }

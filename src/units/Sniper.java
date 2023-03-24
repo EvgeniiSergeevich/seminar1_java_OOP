@@ -7,7 +7,7 @@ public class Sniper extends Archer {
 
 //    int d = getDmg();
     public Sniper (String name, int x, int y, int side) {
-        super(x, y,15, 15,8, 10, 12, 9, 9, 32, 32, name, side);
+        super(x, y,15, 15,8, 10, 12, 9, 9, 10, 32, name, side);
         this.x = x;
         this.y = y;
     }

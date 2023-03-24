@@ -30,8 +30,5 @@ public class Robber extends Warrior {
                 .append("\t| HP:\t").append(Robber.super.hp)
                 .append(" \t|\t\t\t|").append("\t| (X.Y) : ").append(Robber.super.coord.getX()).append(".").append(Robber.super.coord.getY());
     }
-    @Override
-    public void step(ArrayList<Human> red, ArrayList<Human> blue) {
 
-    }
 }
